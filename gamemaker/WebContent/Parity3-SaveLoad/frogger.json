@@ -1,0 +1,144 @@
+{
+    "board": {
+        "background-image": "square",
+        "background-image-path": "images/square.png",
+        "background-tint": "0x1a1a1a",
+        "width": 800,
+        "height": 600
+    },
+    "physics": {
+        //game.physics.startSystem(Phaser.Physics.ARCADE);
+        "type": "ARCADE",
+        "left-wall": true,
+        "right-wall": true,
+        "up-wall": false,
+        "down-wall": true
+    },
+    "objects": [
+        {
+            "name": "frog",
+            "group": "default",
+            "sprite": "triangle",
+            "tint": "0x009900",
+            "width": 30,
+            "height": 30,
+            "anchor-x": 0.5,
+            "anchor-y": 0.5,
+            "start-x": 400,
+            "start-y": 500,
+            "velocity-x": 0,
+            "velocity-y": 0,
+            "random-move": false,
+            "random-x": false,
+            "random-y": false,
+            "randomize-delay": 1000,
+            "check-bounds": true,
+            "oob-params": [
+                "gw-up"
+            ],
+            "collideable": true,
+            "collide-with-bounds": true,
+            "collide-behaviour": [
+                "kill",
+                "game-over"
+            ],
+            "collide-ignore": [ 
+                
+            ],
+            "bounce-amount": 0,
+            "collide-immovable": true
+        },
+        {
+            "name": "car1",
+            "sprite": "square",
+            "tint": "0x009900",
+            "width": 60,
+            "height": 40,
+            "anchor-x": 0.5,
+            "anchor-y": 0.5,
+            "start-x": 400,
+            "start-y": 300,
+            "velocity-x": 50,
+            "velocity-y": 0,
+            "random-move": false,
+            "random-x": false,
+            "random-y": false,
+            "randomize-delay": 1000,
+            "check-bounds": true,
+            "oob-params": [
+                //Parameters to factor in when the object goes out of bounds
+            ],
+            "collideable": true,
+            "collide-with-bounds": true,
+            "collide-behaviour": [
+
+            ],
+            "collide-ignore": [ 
+                
+            ],
+            "bounce-amount": 1,
+            "collide-immovable": false
+        },
+        {
+            "name": "car2",
+            "sprite": "square",
+            "tint": "0x009900",
+            "width": 60,
+            "height": 40,
+            "anchor-x": 0.5,
+            "anchor-y": 0.5,
+            "start-x": 400,
+            "start-y": 200,
+            "velocity-x": -50,
+            "velocity-y": 0,
+            "random-move": false,
+            "random-x": false,
+            "random-y": false,
+            "randomize-delay": 1000,
+            "check-bounds": true,
+            "oob-params": [
+                //Parameters to factor in when the object goes out of bounds
+            ],
+            "collideable": true,
+            "collide-with-bounds": true,
+            "collide-behaviour": [
+
+            ],
+            "collide-ignore": [ 
+                
+            ],
+            "bounce-amount": 1,
+            "collide-immovable": false
+        }
+    ],
+    "input": {
+        "move-left": [
+            {
+                "name": "frog",
+                "speed-x": -7,
+				"speed-y": 0
+            }
+        ],
+        "move-right": [
+            {
+                "name": "frog",
+                "speed-x": 7,
+				"speed-y": 0
+            }
+        ],
+        "move-up": [
+             {
+                "name": "frog",
+                "speed-x": 0,
+				"speed-y": -7
+            }
+        ],
+        "move-down": [
+			{
+                "name": "frog",
+                "speed-x": 0,
+				"speed-y": 7
+            }
+        ]
+    }
+}

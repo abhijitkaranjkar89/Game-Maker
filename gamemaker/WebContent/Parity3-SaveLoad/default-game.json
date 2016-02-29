@@ -1,0 +1,34 @@
+{
+    "board": {
+        "background-image": "square",
+        "background-image-path": "images/square.png",
+        "background-tint": "0x1a1a1a",
+        "width": 800,
+        "height": 600
+    },
+    "physics": {
+        //game.physics.startSystem(Phaser.Physics.ARCADE);
+        "type": "ARCADE",
+        "left-wall": true,
+        "right-wall": true,
+        "up-wall": true,
+        "down-wall": false
+    },
+    "objects": [
+        
+    ],
+    "input": {
+        "move-left": [
+            
+        ],
+        "move-right": [
+            
+        ],
+        "move-up": [
+            
+        ],
+        "move-down": [
+
+        ]
+    }
+}

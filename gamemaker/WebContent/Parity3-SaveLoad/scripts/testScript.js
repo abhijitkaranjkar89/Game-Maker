@@ -1,0 +1,9 @@
+var testJson = '{ "testArray" : [ { "name": "frog", "group": "default", "sprite": "triangle", "tint": "0x009900", "width": 30, "height": 30, "anchor-x": 0.5, "anchor-y": 0.5, "start-x": 400, "start-y": 500, "velocity-x": 0, "velocity-y": 0, "random-move" : false, "random-x": false, "random-y": false, "randomize-delay": 1000, "check-bounds": true, "out-of-bounds-params": { }, "collideable": true, "collide-with-bounds": true, "collide-behaviour": [ "kill" ], "bounce-amount": 0, "collide-immovable": true }, { "name": "pellet", "group": "default", "sprite": "circle", "tint": "0x009900", "width": 15, "height": 15, "anchor-x": 0.5, "anchor-y": 0.5, "start-x": 600, "start-y": 200, "velocity-x": 0, "velocity-y": 0, "random-move" : false, "random-x": false, "random-y": false, "randomize-delay": 1000, "check-bounds": true, "out-of-bounds-params": { }, "collideable": true, "collide-with-bounds": true, "collide-behaviour": [ "kill" ], "bounce-amount": 0, "collide-immovable": true }, { "name": "brick1", "sprite": "square", "tint": "0x009900", "width": 300, "height": 15, "anchor-x": 0.5, "anchor-y": 0.5, "start-x": 400, "start-y": 100, "velocity-x": 0, "velocity-y": 0, "random-move" : false, "random-x": false, "random-y": false, "randomize-delay": 1000, "check-bounds": true, "out-of-bounds-params": { }, "collideable": true, "collide-with-bounds": true, "collide-behaviour": [ ], "bounce-amount": 0, "collide-immovable": true }, { "name": "ghost", "sprite": "circle", "tint": "0x009900", "width": 60, "height": 60, "anchor-x": 0.5, "anchor-y": 0.5, "start-x": 60, "start-y": 60, "velocity-x": 50, "velocity-y": 0, "random-move" : true, "random-x": true, "random-y": true, "randomize-delay": 1000, "check-bounds": true, "out-of-bounds-params": { }, "collideable": true, "collide-with-bounds": true, "collide-behaviour": [ ], "bounce-amount": 0, "collide-immovable": true } ] }';
+
+function startTest()
+{
+	for(var i=0; i < 10; i++)
+	{
+		console.log("test");
+	}
+}

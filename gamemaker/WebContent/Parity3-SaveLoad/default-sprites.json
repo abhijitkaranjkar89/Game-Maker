@@ -1,0 +1,16 @@
+{
+    "sprites": [
+        {
+            "name": "square",
+            "path": "images/square.png"
+        },
+        {
+            "name": "circle",
+            "path": "images/circle.png"
+        },
+        {
+            "name": "triangle",
+            "path": "images/triangle.png"
+        }
+    ]
+}

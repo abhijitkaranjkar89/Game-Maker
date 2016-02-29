@@ -1,0 +1,143 @@
+<html>
+
+<head>
+<script src="phaser.js"></script>
+<script src="jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="jquery.ddslick.js"></script>
+
+<link href="jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="gameeditor.css">
+</head>
+
+<body>
+	<div id="gamepanel"></div>
+	<div id="phaserGame"></div>
+	<div id="accordion-resizer">
+		<div id="accordion" class="wrapper">
+
+			<h3>Create Game</h3>
+			<div>
+				<p>Select game</p>
+				<select id="games">
+					<option value="none">-- Select --</option>
+				</select>
+				<p>Or Create New Game</p>
+				<p>
+					Enter Game Name: <input id="gamename" type="text" value="Game Name"
+						style="width: 100px;"></input>
+				</p>
+				<button onclick="addGame()">Create Game</button>
+			</div>
+
+
+			<h3>Select Sprite</h3>
+			<div>
+				<p>Please select sprite</p>
+				<select id="sprite">
+				</select>
+
+				<p>
+					X: <input id="spriteX" type="text" value="300" style="width: 50px;"></input>
+					Y: <input id="spriteY" type="text" value="200" style="width: 50px;"></input>
+					Width: <input id="spriteWidth" type="text" value="100"
+						style="width: 50px;"></input> Height: <input id="spriteHeight"
+						type="text" value="100" style="width: 50px;"></input>
+				</p>
+				<button onclick="addSprite()">Add Sprite</button>
+			</div>
+
+			<h3>Edit Sprite</h3>
+			<div>
+				<input id="spriteName" type="hidden" style="width: 100px;"></input>
+				<input id="editSpriteX" type="hidden" style="width: 50px;"></input>
+				<input id="editSpriteY" type="hidden" style="width: 50px;"></input>
+				<p>
+					Width: <input id="editSpriteWidth" type="text" style="width: 50px;"></input>
+				</p>
+				Height: <input id="editSpriteHeight" type="text"
+					style="width: 50px;"></input>
+				<p>
+					<button onclick="editSpritePhaser()">Edit Sprite</button>
+				</p>
+				<p>
+					<button onclick="removeSprite()">Delete Sprite</button>
+				</p>
+			</div>
+
+			<h3>Add Actions</h3>
+			<div>
+				<p>Add Actions for Events</p>
+				<select id="events" onchange="checkIfKeyPress()">
+					<option value="none">-- Select --</option>
+					<option value="onCollision">On Collision</option>
+					<option value="onUpdate">On Update</option>
+					<option value="onKeyPress">On KeyPress</option>
+					<option value="onOutOfBounds">On Out of Bounds</option>
+				</select> <select id="options" disabled>
+					<option value="none">-- Select --</option>
+					<option value="move-up">Up</option>
+					<option value="move-down">Down</option>
+					<option value="move-left">Left</option>
+					<option value="move-right">Right</option>
+				</select> <select id="actions">
+					<option value="none">-- Select --</option>
+					<option value="explode">Explode</option>
+					<option value="bounce">bounce</option>
+					<option value="random">Random Move</option>
+					<option value="moveup">Move Up</option>
+					<option value="movedown">Move Down</option>
+					<option value="moveleft">Move Left</option>
+					<option value="moveright">Move Right</option>
+				</select>
+				<button onclick="addActionEvents()">Add Action</button>
+			</div>
+
+			<h3>Add Walls to the Game</h3>
+			<div>
+				<p>Select Walls</p>
+				<input type="checkbox" name="wall" id="TopWall"
+					onclick="wallCheck()">Top Wall<br> <input
+					type="checkbox" name="wall" id="BottomWall" onclick="wallCheck()">Bottom
+				Wall<br> <input type="checkbox" name="wall" id="LeftWall"
+					onclick="wallCheck()">Left Wall<br> <input
+					type="checkbox" name="wall" id="RightWall" onclick="wallCheck()">Right
+				Wall
+			</div>
+
+			<h3>Background Image</h3>
+			<div>
+				<p>Select Background Image</p>
+				<select id="background" onchange="changeBackground()">
+					<option value="0">-- Select --</option>
+					<option value="1">Mountains</option>
+					<option value="2">Desert</option>
+					<option value="3">City</option>
+					<option value="4">Under water</option>
+				</select>
+			</div>
+
+		</div>
+	</div>
+
+
+	<button onclick="onPlayClicked()">Play</button>
+	<button onclick="onPauseClicked()">Pause</button>
+	<button onclick="onSaveClicked()">Save</button>
+	<button onclick="onLoadClicked()">Load</button>
+
+	<div id="editorWindow" style="visibility: hidden">
+		<script src="gameeditor.js"></script>
+	</div>
+	<script src="gameConfig.js"></script>
+	<script src="servercalls.js"></script>
+
+	
+		<script src="../saving/scripts/default-sprites.js"></script>
+		<script src="../saving/scripts/constants.js"></script>
+		<script src="../saving/scripts/game.js"></script>
+		
+
+	
+</body>
+</html>

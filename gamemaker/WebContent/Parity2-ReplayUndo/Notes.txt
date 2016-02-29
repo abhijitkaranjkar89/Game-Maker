@@ -1,0 +1,7 @@
+url: localhost/gamemaker
+
+Use sprite groups for collision 'layers'
+
+Generate all objects with JSON
+
+Add "Toggle" functions for buttons to show visible interactivity

@@ -1,0 +1,30 @@
+#gamepanel {
+	border: solid 1px #ccc;
+	position: absolute;
+	left: 430px;
+	top: 10px;
+}
+
+#phaserGame {
+	border: solid 1px #ccc;
+	position: absolute;
+	left: 430px;
+	top: 10px;
+}
+
+#gameWindow {
+	border: solid 1px #ccc;
+	position: absolute;
+	left: 430px;
+	top: 10px;
+}
+
+.wrapper {
+	width: 400px;
+}
+
+#accordion-resizer {
+	width: 400px;
+	height: 525px;
+	margin-top: 10px;
+}
