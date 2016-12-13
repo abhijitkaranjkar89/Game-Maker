@@ -36,5 +36,7 @@ password=gamemaker
 7.Run index.html for corresponding parity
 
 Note: To run index.html of parity 1 use this url
+
 http://localhost:8080/WebGameMaker/parity1/index.html
+
 Similarlly for other parities too
