@@ -27,9 +27,9 @@ Some Key Ponts:
 
 5. Please use following Database credentials. As of now I have removed it from property file
 
-url=jdbc:mysql://tintin.cs.indiana.edu:8099/gamemaker
-username=gamemaker
-password=gamemaker
+url=jdbc:mysql:DatabaseURLGOESHERE
+username=****
+password=****
 
 6.Please add these credentials to src->main->resources->db.properties
 
