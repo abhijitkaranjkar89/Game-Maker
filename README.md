@@ -16,7 +16,7 @@ Game Maker (Pac Man) : https://www.youtube.com/watch?v=7LFsM3qRthU
 
 ************** Instructons *****************
 
-Some Key Ponts:
+Some Key Points:
 
 1. The parity-wise code has been included in WebContent folder
 2. The code structure is self explanatory.
